@@ -29,9 +29,24 @@ def build_product_tree():
     root = TreeNode("Electronics")
 
     laptop = TreeNode("Laptop")
-    laptop.add_child(TreeNode("Mac"))
+    # laptop.add_child(TreeNode("Mac"))
     laptop.add_child(TreeNode("Surface"))
     laptop.add_child(TreeNode("Thinkpad"))
+
+    laptop.add_child(TreeNode("MS"))
+
+
+
+
+    apple = TreeNode("Mac")
+    apple.add_child(TreeNode("Macbook"))
+    apple.add_child(TreeNode("Macbook Pro"))
+    apple.add_child(TreeNode("Macbook Air"))
+
+    # laptop2.add_child(TreeNode("MS"))
+
+    # laptop.addChild()
+
 
     tablet=TreeNode("Tablet")
     tablet.add_child(TreeNode("ipad"))
@@ -47,10 +62,35 @@ def build_product_tree():
     tv.add_child(TreeNode("Samsung"))
     tv.add_child(TreeNode("LG"))
 
+    
+    smartwatch=TreeNode("Smartwatch")
+    smartwatch.add_child(TreeNode("apple"))
+    smartwatch.add_child(TreeNode("samsung"))
+    smartwatch.add_child(TreeNode("garmin"))
+
+    # applewatch=smartwatch.add_child(TreeNode("Apple watch6"))
+    # smartwatch.apple.add_child(TreeNode("something"))
+
+    # Tree('C111')
+
+    # child111 = Tree('C111')
+
     root.add_child(laptop)
     root.add_child(cellphone)
     root.add_child(tv)
     root.add_child(tablet)
+    root.add_child(smartwatch)
+    laptop.add_child(apple)
+
+    # laptop.addChild()
+
+    # root.smartwatch.add_child()
+
+
+
+
+
+    # cellphone.add_child(Ios)
     
     root.print_tree()
 
